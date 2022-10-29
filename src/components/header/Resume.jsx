@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
 
 const Resume = () => {
   return (
-    <div className='resume'>
-      <a href="" download>Check Out My Resume</a>
-      <a href="">Let's Chat</a>
+    <div className="resume">
+      <a href="" className="btn" download>
+        Download Resume
+      </a>
+      <a href="#contact" className="btn btn-primary">Let's Chat</a>
     </div>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;

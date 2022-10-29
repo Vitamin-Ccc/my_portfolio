@@ -11,15 +11,18 @@
 }
 
 :root {
-  --color-primary: #4db5ff;
+  --color-primary: #f7e7ce;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
   --color-white: #f0e8d6;
   --color-light: rgba(255, 255, 255, 0.6);
   --color-bg: #7f885c;
+  --color-green: #eef3d4c7;
+  --color-olive: #B3B47E;
+  --color-lilac: #ADAAA0;
   /* 
     golden peach: #F0D2AC,#E0C389,#E4C3B1
     dusty lilac: #9D8D8E, #ADAAA0
-    green: #E9E5CD, #B4AC7B, #DADFBC, 
+    green: #E9E5CD, #B4AC7B, #DADFBC, eef3d4c7
     beige: #FAFBED
   */
 
@@ -53,11 +56,11 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 
 section{
@@ -79,34 +82,38 @@ section > h2{
 }
 
 a {
-  color: var(--color-primary);
-  transition: var(--transition)
+  color: var(--color-lilac);
+  transition: var(--transition);
 }
 
 a:hover {
   color:var(--color-white)
 }
 
+.icon {
+  font-size: 25px;
+}
+
 .btn {
   width: max-content;
   display: inline-block;
-  color: var(--color-primary);
+  color: var(--color-green);
   padding: 0.75rem 1.2rem;
   border-radius: 0.4rem;
   cursor: pointer;
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-green);
   transition: var(var(--transition));
 }
 
 .btn:hover {
-  background: var(--color-white);
+  background: var(--color-primary);
   color: var(--color-bg);
   border-color: transparent;
 }
 
 .btn-primary {
-  background: var(--color-primary);
-  color: var(--color-bg);
+  background: var(--color-olive);
+  color: var(--color-white);
 }
 
 img {
