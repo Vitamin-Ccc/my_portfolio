@@ -4,6 +4,7 @@ import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Navigation from './components/nav/Navigation';
 import Portfolio from './components/portfolio/Portfolio';
+import Skills from './components/skills/Skills';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Navigation />
       <About />
+      <Skills />
       <Portfolio />
       <Contact />
       <Footer />

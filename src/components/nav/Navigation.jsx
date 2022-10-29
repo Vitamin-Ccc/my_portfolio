@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./navigation.css";
 import { BiUser, BiMessageDetail, BiBook, BiHomeHeart } from "react-icons/bi";
+import { BsCardChecklist } from "react-icons/bs";
 
 const Navigation = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -19,6 +20,13 @@ const Navigation = () => {
         className={activeNav === "#about" ? "active" : ""}
       >
         <BiUser />
+      </a>
+      <a
+        href="#skills"
+        onClick={() => setActiveNav("#skills")}
+        className={activeNav === "#skills" ? "active" : ""}
+      >
+        <BsCardChecklist />
       </a>
       <a
         href="#portfolio"

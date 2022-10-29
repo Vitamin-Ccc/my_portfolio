@@ -13,9 +13,10 @@
 :root {
   --color-primary: #f7e7ce;
   --color-primary-variant: rgba(77, 181, 255, 0.4);
-  --color-white: #f0e8d6;
+  --color-white: #fff8e7;
   --color-light: rgba(255, 255, 255, 0.6);
   --color-bg: #7f885c;
+  --color-bg-variant: rgba(127, 136, 92);
   --color-green: #eef3d4c7;
   --color-olive: #B3B47E;
   --color-lilac: #ADAAA0;
@@ -23,7 +24,7 @@
     golden peach: #F0D2AC,#E0C389,#E4C3B1
     dusty lilac: #9D8D8E, #ADAAA0
     green: #E9E5CD, #B4AC7B, #DADFBC, eef3d4c7
-    beige: #FAFBED
+    beige: #FAFBED, #f7e7ce, fff8e7
   */
 
   --container-width-lg: 75%;
@@ -65,7 +66,6 @@ h1 {
 
 section{
   margin-top: 8rem;
-  height: 100vh;
 }
 
 section > h2, section > h5 {
