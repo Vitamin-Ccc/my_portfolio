@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import "./contact.css";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const form = useRef();
@@ -8,14 +8,13 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_ruij00h",
-        "template_5cld0ao",
-        form.current,
-        "EE_RT39LxYD82YUMS"
-      )
-      e.target.reset()
+    emailjs.sendForm(
+      "service_ruij00h",
+      "template_5cld0ao",
+      form.current,
+      "EE_RT39LxYD82YUMS"
+    );
+    e.target.reset();
   };
   return (
     <section id="contact">
@@ -36,9 +35,11 @@ const Contact = () => {
             placeholder="Your Message"
             required
           />
-          <button type="submit" className="btn btn-primary">
-            Send Message
-          </button>
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <button type="submit" className="btn btn-primary">
+              Send Message
+            </button>
+          </div>
         </form>
       </div>
     </section>

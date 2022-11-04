@@ -6,13 +6,28 @@ const data = [
   {
     id: 1,
     // image: IMG1,
-    title: 'To Do List',
-    github: '',
+    title: 'Memo',
+    github: 'https://github.com/Vitamin-Ccc/Memo',
     demo: ''
   },
   {
-    
+    id: 2,
+    title: 'Cocktail Recipe',
+    github: 'https://github.com/Vitamin-Ccc/cocktail',
+    demo: ''
   },
+  {
+    id: 3,
+    title: 'Trip Planner',
+    github: 'https://github.com/Vitamin-Ccc/my_planner',
+    demo: ''
+  },
+  {
+    id: 4,
+    title: 'Slurp Boba',
+    github: 'https://github.com/Vitamin-Ccc/slurp',
+    demo: ''
+  }
 
 ]
 
@@ -28,12 +43,12 @@ const Portfolio = () => {
           </div>
           <h3>{title}</h3>
           <div className="portfolio__item-cta">
-            <a href={github} className="btn" target="_blank">
+            <a href={github} className="btn" target="_blank" rel="noreferrer">
               Github
             </a>
-            <a href={demo} className="btn btn-primary" target="_blank">
+            {/* <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer" >
               Live Demo
-            </a>
+            </a> */}
           </div>
         </article>
       )

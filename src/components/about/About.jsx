@@ -43,10 +43,9 @@ const About = () => {
 
           <p>
             Hi, I graduated from a full-time fullstack web development bootcamp
-            in February of 2022. I do not have any prior work experience as a
-            developer/engineer but I am currently looking for a junior level web
+            in February of 2022. I am currently looking for a junior level web
             developer or software engineer position. Please feel free to contact
-            me if you are interested in knowing more about my experience or
+            me if you are interested in knowing more about my experience and
             projects.
           </p>
 
