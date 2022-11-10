@@ -3,7 +3,7 @@ import "./about.css";
 import { SlGraduation } from "react-icons/sl";
 import { BsFolderCheck } from "react-icons/bs";
 import { AiOutlineIdcard } from "react-icons/ai";
-// import ME from "../../images/me.JPG";
+import ME from "../../images/me.jpeg";
 
 const About = () => {
   return (
@@ -13,7 +13,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            {/* <img src={ME} alt="My Image" /> */}
+            <img src={ME} alt="My Image" />
           </div>
         </div>
         <div className="about__content">

@@ -1,33 +1,41 @@
 import React from "react";
 import "./portfolio.css";
-// import IMG1 from '../../image/portfolio1.jpg'
+import slurp from '../../images/slurp.jpeg'
+import psa10 from '../../images/psa10.jpeg'
 
 const data = [
   {
     id: 1,
-    // image: IMG1,
-    title: 'Memo',
-    github: 'https://github.com/Vitamin-Ccc/Memo',
-    demo: ''
+    image: slurp,
+    title: 'Slurp Utah',
+    github: 'https://github.com/Vitamin-Ccc/slurp',
+    demo: 'https://www.slurputah.com'
   },
   {
     id: 2,
-    title: 'Cocktail Recipe',
-    github: 'https://github.com/Vitamin-Ccc/cocktail',
-    demo: ''
-  },
-  {
-    id: 3,
-    title: 'Trip Planner',
-    github: 'https://github.com/Vitamin-Ccc/my_planner',
-    demo: ''
-  },
-  {
-    id: 4,
-    title: 'Slurp Boba',
-    github: 'https://github.com/Vitamin-Ccc/slurp',
-    demo: ''
+    image: psa10,
+    title: 'PSA10',
+    github: 'https://github.com/XavioArts/psa10_app',
   }
+  // {
+  //   id: 1,
+  //   // image: IMG1,
+  //   title: 'Memo',
+  //   github: 'https://github.com/Vitamin-Ccc/Memo',
+  //   demo: ''
+  // },
+  // {
+  //   id: 2,
+  //   title: 'Cocktail Recipe',
+  //   github: 'https://github.com/Vitamin-Ccc/cocktail',
+  //   demo: ''
+  // },
+  // {
+  //   id: 3,
+  //   title: 'Trip Planner',
+  //   github: 'https://github.com/Vitamin-Ccc/my_planner',
+  //   demo: ''
+  // },
 
 ]
 
@@ -36,19 +44,34 @@ const Portfolio = () => {
 
   const renderProject = () => {
     return data.map(({id, image, title, github, demo}) => {
+      if(!demo) {
+        return (
+          <article className="portfolio__item" key={id}>
+            <div className="portfolio__item-image">
+              <img src={image} alt={title} />
+            </div>
+            <h3>{title}</h3>
+            <div className="portfolio__item-cta">
+              <a href={github} className="btn" target="_blank" rel="noreferrer">
+                Github
+              </a>
+            </div>
+          </article>
+        )
+      }
       return (
-        <article className="portfolio__item">
+        <article className="portfolio__item" key={id}>
           <div className="portfolio__item-image">
-            {/* <img src={image} alt={title} /> */}
+            <img src={image} alt={title} />
           </div>
           <h3>{title}</h3>
           <div className="portfolio__item-cta">
             <a href={github} className="btn" target="_blank" rel="noreferrer">
               Github
             </a>
-            {/* <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer" >
+            <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer" >
               Live Demo
-            </a> */}
+            </a>
           </div>
         </article>
       )

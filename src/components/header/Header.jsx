@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import Resume from "./Resume";
 import Social from "./Social";
-// import ME from "../../images/me.png";
+import ME from "../../images/me Small.png";
 
 const Header = () => {
   return (
@@ -15,7 +15,7 @@ const Header = () => {
         <Resume />
         <Social />
         <div className="me">
-          {/* <img src={ME} alt="My Image" /> */}
+          <img src={ME} alt="My Image" />
         </div>
 
         <a href="#footer" className="scroll__down">
