@@ -1,5 +1,5 @@
 import React from "react";
-import CV from "../../images/SkyLin_Updated_Resume.pdf"
+import CV from "../../images/SkyLin.pdf"
 
 const Resume = () => {
   return (

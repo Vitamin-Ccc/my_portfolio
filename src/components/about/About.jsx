@@ -35,8 +35,7 @@ const About = () => {
               <BsFolderCheck className="about__icon" />
               <h5>Projects</h5>
               <small>
-                Building a website for my friend's business, expecting December
-                of 2022
+                Building a website for my friend's business
               </small>
             </article>
           </div>
