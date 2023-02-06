@@ -2,6 +2,7 @@ import React from "react";
 import "./portfolio.css";
 import slurp from '../../images/slurp.jpeg'
 import psa10 from '../../images/psa10.jpeg'
+import gericht from '../../images/gericht.jpeg'
 
 const data = [
   {
@@ -16,14 +17,15 @@ const data = [
     image: psa10,
     title: 'PSA10',
     github: 'https://github.com/XavioArts/psa10_app',
-  }
-  // {
-  //   id: 1,
-  //   // image: IMG1,
-  //   title: 'Memo',
-  //   github: 'https://github.com/Vitamin-Ccc/Memo',
-  //   demo: ''
-  // },
+  },
+
+  {
+    id: 3,
+    image: gericht,
+    title: 'Gericht Restaurant',
+    github: 'https://github.com/Vitamin-Ccc/gericht_restaurant',
+    // demo: ''
+  },
   // {
   //   id: 2,
   //   title: 'Cocktail Recipe',
