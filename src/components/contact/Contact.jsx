@@ -25,7 +25,7 @@ const Contact = () => {
           <input
             type="text"
             name="name"
-            placeholder="Your Full Name"
+            placeholder="Your Name"
             required
           />
           <input type="email" name="email" placeholder="Your Email" required />

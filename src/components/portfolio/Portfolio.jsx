@@ -3,6 +3,7 @@ import "./portfolio.css";
 import slurp from '../../images/slurp.jpeg'
 import psa10 from '../../images/psa10.jpeg'
 import gericht from '../../images/gericht.jpeg'
+import memo from '../../images/memo.jpeg'
 
 const data = [
   {
@@ -26,12 +27,13 @@ const data = [
     github: 'https://github.com/Vitamin-Ccc/gericht_restaurant',
     // demo: ''
   },
-  // {
-  //   id: 2,
-  //   title: 'Cocktail Recipe',
-  //   github: 'https://github.com/Vitamin-Ccc/cocktail',
-  //   demo: ''
-  // },
+  {
+    id: 4,
+    image: memo,
+    title: 'Memo App',
+    github: 'https://github.com/Vitamin-Ccc/cocktail',
+    // demo: ''
+  },
   // {
   //   id: 3,
   //   title: 'Trip Planner',
