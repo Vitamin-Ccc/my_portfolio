@@ -22,7 +22,7 @@ const About = () => {
               <SlGraduation className="about__icon" />
               <h5>Education</h5>
               <small>
-                BS in Information Systems, Certificate in Fullstack Web
+                BS in Information Systems, Certificate in Full-Stack Web
                 Development
               </small>
             </article>
@@ -35,14 +35,14 @@ const About = () => {
               <BsFolderCheck className="about__icon" />
               <h5>Projects</h5>
               <small>
-                Slurp Boba, Memo App
+                Slurp Boba, Memo App, Gericht Restaurant
               </small>
             </article>
           </div>
 
           <p>
-            Hi, I am currently looking for a junior level web
-            developer or software engineer position. I'm working on the Gericht Restaurant project and Memo App right now, once they're done I will have a live demo for them so stay tuned for those projects! Please feel free to contact
+            Hi, I am currently looking for an opportunity in software engineering. 
+            I'm working on the Gericht Restaurant project and Memo App right now, once they're done I will have a live demo for them so stay tuned for those projects! Please feel free to contact
             me if you are interested in knowing more about my experience and
             projects.
           </p>
