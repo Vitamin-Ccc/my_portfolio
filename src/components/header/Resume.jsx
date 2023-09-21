@@ -7,7 +7,7 @@ const Resume = () => {
       <a href={CV} className="btn" download>
         Download Resume
       </a>
-      <a href="#contact" className="btn btn-primary">Let's Chat</a>
+      <a href="#contact" className="btn btn-primary">Let's Connect</a>
     </div>
   );
 };

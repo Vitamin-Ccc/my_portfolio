@@ -10,7 +10,7 @@ const data = [
     id: 1,
     image: slurp,
     title: 'Slurp Utah',
-    github: 'https://github.com/Vitamin-Ccc/slurp',
+    // github: 'https://github.com/Vitamin-Ccc/slurp',
     demo: 'https://www.slurputah.com'
   },
   {
@@ -31,7 +31,7 @@ const data = [
     id: 4,
     image: memo,
     title: 'Memo App',
-    github: 'https://github.com/Vitamin-Ccc/cocktail',
+    github: 'https://github.com/Vitamin-Ccc/my_planner',
     // demo: ''
   },
   // {
@@ -48,21 +48,6 @@ const Portfolio = () => {
 
   const renderProject = () => {
     return data.map(({id, image, title, github, demo}) => {
-      if(!demo) {
-        return (
-          <article className="portfolio__item" key={id}>
-            <div className="portfolio__item-image">
-              <img src={image} alt={title} />
-            </div>
-            <h3>{title}</h3>
-            <div className="portfolio__item-cta">
-              <a href={github} className="btn" target="_blank" rel="noreferrer">
-                Github
-              </a>
-            </div>
-          </article>
-        )
-      }
       return (
         <article className="portfolio__item" key={id}>
           <div className="portfolio__item-image">
@@ -70,12 +55,18 @@ const Portfolio = () => {
           </div>
           <h3>{title}</h3>
           <div className="portfolio__item-cta">
-            <a href={github} className="btn" target="_blank" rel="noreferrer">
+            {!demo && (
+            <div>
+              <a href={github} className="btn" target="_blank" rel="noreferrer">
               Github
             </a>
+            </div>)}
+            {!github && (
+            <div>
             <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer" >
               Live Demo
             </a>
+            </div>)}
           </div>
         </article>
       )
