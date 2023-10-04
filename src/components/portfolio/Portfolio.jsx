@@ -10,7 +10,7 @@ const data = [
     id: 1,
     image: slurp,
     title: "Slurp Utah",
-    github: 'https://github.com/Vitamin-Ccc/slurp',
+    // github: 'https://github.com/Vitamin-Ccc/slurp',
     demo: "https://www.slurputah.com",
   },
   {
